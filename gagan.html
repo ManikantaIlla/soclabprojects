@@ -7,19 +7,66 @@
           background: linear-gradient(to right,#2596be , #76b5c5);;
            
             }
+
+	   body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* White background */
+            color: #000; /* Black text color */
+        }
+
+        nav {
+            background-color: #000; /* Black background */
+            overflow: hidden;
+        }
+
+        nav a {
+            display: block;
+            color: #fff; /* White text color */
+            text-align: left;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            background-color: #fff; /* White background on hover */
+            color: #000; /* Black text color on hover */
+        }
+
+        div {
+            background-color: #fff; /* White background for lab activities */
+            color: #000; /* Black text color for lab activities */
+            padding: 10px;
+            margin: 10px;
+        }
+
+        ol {
+            list-style-type: decimal;
+        }
+
+        li a {
+            color: #fff; /* White text color for lab activity links */
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #000; /* Black background on hover for lab activity links */
+            color: #fff; /* White text color on hover for lab activity links */
+        }
 	 
 </style>
 </head>
  
 <body  >
- <div class="con">
-    <li>
-	<li ><a href="home.html" target="contentFrame"> Home</a></li>
-	<li  ><a href="aboutus.html" target="contentFrame">About us</a></li>
-	<li  ><a href="login.html" target="contentFrame">Log In</a></li>
-	<li ><a href="register.html" target="contentFrame">Register</a></li>
-   </li>
-</div>
+<nav>
+    <a href="#home" target="contentFrame">Home</a>
+    <a href="#about" target="contentFrame">About Us</a>
+    <a href="#login" target="contentFrame">Login Page</a>
+    <a href="#register" target="contentFrame">Register</a>
+</nav>
+
 <hr/>
 <p>Lab work<p>
    <ol style="list-style-type:"decimal">
