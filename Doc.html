@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - BVC Engineering College</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+           ;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+     <h1>Introduction to Document and Window Object in JavaScript</h1>
+
+    <h2>The Document Object</h2>
+    <p>The Document Object represents the HTML document loaded in the browser window and provides methods and properties to interact with its content.</p>
+
+    <h3>Example:</h3>
+    <pre><code>
+        // Accessing elements by ID
+        let elementById = document.getElementById('myElementId');
+
+        // Accessing elements by class name
+        let elementsByClassName = document.getElementsByClassName('myClassName');
+
+        // Accessing elements by tag name
+        let elementsByTagName = document.getElementsByTagName('div');
+    </code></pre>
+
+    <h2>The Window Object</h2>
+    <p>The Window Object represents the browser window and provides methods and properties to control the browser.</p>
+
+    <h3>Example:</h3>
+    <pre><code>
+        // Opening a new window
+        let newWindow = window.open('https://www.example.com', '_blank');
+
+        // Closing the current window
+        window.close();
+
+        // Redirecting to a new URL
+        window.location.href = 'https://www.example.com';
+    </code></pre>
+
+    <h2>Conclusion</h2>
+    <p>The Document and Window objects are fundamental to JavaScript programming in the browser environment. Understanding their properties and methods allows developers to create dynamic and interactive web applications.</p>
+
+    
+    <footer>
+        &copy; 2024 Your Name | BVC Engineering College
+    </footer>
+</div>
+
+</body>
+</html>

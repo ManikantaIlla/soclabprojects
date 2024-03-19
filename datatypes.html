@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - BVC Engineering College</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+           
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            height: 100vh;
+        }
+
+        .container {
+            
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+           
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Data Types and Numeric Type Conversions in JavaScript</h1>
+
+    <h2>Data Types</h2>
+    <p>JavaScript supports several data types:</p>
+    <ul>
+        <li><strong>Number:</strong> Represents numeric data, including integers, floats, and NaN (Not-a-Number).</li>
+        <li><strong>String:</strong> Represents text data enclosed within single ('') or double ("") quotes.</li>
+        <li><strong>Boolean:</strong> Represents true or false values.</li>
+        <li><strong>Null:</strong> Represents an empty value.</li>
+        <li><strong>Undefined:</strong> Represents a variable that has been declared but not initialized.</li>
+        <li><strong>Object:</strong> Represents a collection of key-value pairs.</li>
+        <li><strong>Symbol:</strong> Represents unique identifiers.</li>
+    </ul>
+
+    <h2>Numeric Type Conversions</h2>
+    <p>JavaScript provides various methods for converting data between different numeric types:</p>
+    <ul>
+        <li><strong>parseInt():</strong> Converts a string to an integer.</li>
+        <li><strong>parseFloat():</strong> Converts a string to a floating-point number.</li>
+        <li><strong>Number():</strong> Converts a value to a number.</li>
+    </ul>
+
+    <h3>Example:</h3>
+    <pre><code>
+        let numString = "10";
+        let numInt = parseInt(numString); // Convert string to integer
+        let numFloat = parseFloat("3.14"); // Convert string to float
+        let numConversion = Number(true); // Convert boolean to number
+
+        console.log(numInt); // Output: 10
+        console.log(numFloat); // Output: 3.14
+        console.log(numConversion); // Output: 1
+    </code></pre>
+
+    <p>Understanding data types and numeric type conversions is essential for working effectively with JavaScript variables and performing calculations.</p>
+    <footer>
+        &copy; 2024 Your Name | BVC Engineering College
+    </footer>
+</div>
+
+</body>
+</html>

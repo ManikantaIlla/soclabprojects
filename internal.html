@@ -1,69 +1,64 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Internal</title>
+ <script>
+	function greet(){
+	    alert('Your hand looks heavy, can I hold it for you?');
+	}
+</script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+           
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+          
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
 </head>
+   
 
- 
-<style>
-.timer-container {
-    background-color: #00bafc;
-    padding: 20px;
-    text-align: center;
-    height: 100vh;
-}
-
-.timer-display {
-    font-size: 50px;
-    color: white;
-}
-
-.user-input {
-    border-width: 0px;
-    border-radius: 4px;
-    padding: 6px;
-    text-align: center;
-}
-
-.bomb-image {
-    margin-top: 40px;
-    width: 150px;
-}
-</style>
 <body>
-    <div class="timer-container">
-        <input type="text" class="user-input" id="defuser" />
-        <br />
-        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/time-bomb-img.png" class="bomb-image" />
-        <p class="timer-display" id="timer">10</p>
-       
+<div class = "container">
+    <h1>Internal JavaScript</h1>
 
-       <script>
-         let timerEl = document.getElementById("timer");
-let defuserEl = document.getElementById("defuser");
-defuserEl.addEventListener("keydown", function(event) {
-    let bombDefuserText = defuserEl.value;
-    if (event.key === "Enter" && bombDefuserText === "defuse" && countdown !== 0) {
-        clearInterval(intervalid);
-        timerEl.textContent = "You did it";
-    }
+    <p><strong>About internal JavaScript:</strong></p>
+    <p><strong><u>Embedded within HTML:</u></strong> Internal JavaScript is written directly within the HTML document, making it convenient for small scripts or scripts specific to that particular page.</p>
+    <p><strong><u>Script Tags:</u></strong> To include internal JavaScript in an HTML document, you use <code>&lt;script&gt;</code> tags. These tags can be placed in the <code>&lt;head&gt;</code> section, the <code>&lt;body&gt;</code> section, or both. Placing the script in the <code>&lt;head&gt;</code> section ensures that it loads before the page content, while placing it in the <code>&lt;body&gt;</code> section allows the page content to load first.</p>
+    <p><strong><u>Event Handlers:</u></strong> Internal JavaScript is often used to attach event handlers directly to HTML elements. For example, you can use the <code>onclick</code> attribute to specify JavaScript code to execute when a user clicks on a particular element.</p>
+    <p><strong><u>Access to DOM:</u></strong> Since internal JavaScript is embedded within the HTML document, it has direct access to the Document Object Model (DOM) of the page. This allows it to manipulate the structure, content, and style of the page dynamically.</p>
+    <p><strong><u>Execution Order:</u></strong> Internal JavaScript executes in the order it appears in the HTML document. Scripts placed in the <code>&lt;head&gt;</code> section are executed before those in the <code>&lt;body&gt;</code> section.</p>
+    <p><strong><u>Pros and Cons:</u></strong> Internal JavaScript can be convenient for small scripts or scripts specific to a single page since it's included directly within the HTML. However, for larger scripts or scripts used across multiple pages, it's often better to use external JavaScript files to separate concerns and improve maintainability.</p>
 
-});
-let countdown = 10;
-let intervalid = setInterval(function() {
-    countdown = countdown - 1;
-    timerEl.textContent = countdown;
-    if (countdown === 0) {
-        timerEl.textContent = "BOOM";
-        clearInterval(intervalid);
-    }
-}, 1000);
-     </script>
-    </div>
+<button onclick="greet()"><center>Click me</center></button>
+</div>
 </body>
-
 </html>

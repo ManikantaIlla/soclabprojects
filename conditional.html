@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - BVC Engineering College</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+          
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+           
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+     <h1>Conditional Statements in JavaScript</h1>
+
+    <h2>Introduction to Conditional Statements</h2>
+    <p>Conditional statements allow you to execute different blocks of code based on whether a condition is true or false. JavaScript provides several types of conditional statements:</p>
+    <ul>
+        <li><strong>if</strong> statement</li>
+        <li><strong>if...else</strong> statement</li>
+        <li><strong>if...else if...else</strong> statement</li>
+        <li><strong>switch</strong> statement</li>
+    </ul>
+
+    <h2>if Statement</h2>
+    <p>The <strong>if</strong> statement allows you to execute a block of code if a specified condition is true.</p>
+    <pre><code>
+        let hour = new Date().getHours();
+        if (hour < 12) {
+            document.write("Good morning!");
+        }
+    </code></pre>
+
+    <h2>if...else Statement</h2>
+    <p>The <strong>if...else</strong> statement allows you to execute one block of code if a specified condition is true and another block of code if the condition is false.</p>
+    <pre><code>
+        let hour = new Date().getHours();
+        if (hour < 12) {
+            document.write("Good morning!");
+        } else {
+            document.write("Good afternoon!");
+        }
+    </code></pre>
+
+    <h2>if...else if...else Statement</h2>
+    <p>The <strong>if...else if...else</strong> statement allows you to specify multiple conditions to execute different blocks of code based on the different conditions.</p>
+    <pre><code>
+        let hour = new Date().getHours();
+        if (hour < 12) {
+            document.write("Good morning!");
+        } else if (hour < 18) {
+            document.write("Good afternoon!");
+        } else {
+            document.write("Good evening!");
+        }
+    </code></pre>
+
+    <h2>switch Statement</h2>
+    <p>The <strong>switch</strong> statement allows you to select one of many code blocks to be executed.</p>
+    <pre><code>
+        let day = new Date().getDay();
+        switch (day) {
+            case 0:
+                document.write("Sunday");
+                break;
+            case 1:
+                document.write("Monday");
+                break;
+            case 2:
+                document.write("Tuesday");
+                break;
+            // More cases...
+            default:
+                document.write("Other day");
+        }
+    </code></pre>
+
+    <p>Conditional statements are essential for controlling the flow of execution in JavaScript programs.</p>
+
+    <footer>
+        &copy; 2024 Your Name | BVC Engineering College
+    </footer>
+</div>
+
+</body>
+</html>

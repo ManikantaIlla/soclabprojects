@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - BVC Engineering College</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+           
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+     <h1>Looping in JavaScript</h1>
+
+    <h2>Introduction to Loops</h2>
+    <p>In JavaScript, loops are used to execute a block of code repeatedly until a certain condition is met. There are several types of loops available in JavaScript:</p>
+    <ul>
+        <li><strong>for</strong> loop</li>
+        <li><strong>while</strong> loop</li>
+        <li><strong>do...while</strong> loop</li>
+        <li><strong>for...in</strong> loop</li>
+        <li><strong>for...of</strong> loop (Introduced in ES6)</li>
+    </ul>
+
+    <h2>Examples of Loops</h2>
+
+    <h3>1. for Loop</h3>
+    <pre><code>
+        for (let i = 0; i < 5; i++) {
+            console.log(i);
+        }
+    </code></pre>
+
+    <h3>2. while Loop</h3>
+    <pre><code>
+        let i = 0;
+        while (i < 5) {
+            console.log(i);
+            i++;
+        }
+    </code></pre>
+
+    <h3>3. do...while Loop</h3>
+    <pre><code>
+        let i = 0;
+        do {
+            console.log(i);
+            i++;
+        } while (i < 5);
+    </code></pre>
+
+    <h3>4. for...in Loop</h3>
+    <pre><code>
+        const person = {
+            name: 'John',
+            age: 30,
+            gender: 'male'
+        };
+
+        for (let key in person) {
+            console.log(key + ': ' + person[key]);
+        }
+    </code></pre>
+
+    <h3>5. for...of Loop</h3>
+    <pre><code>
+        const array = [1, 2, 3, 4, 5];
+        for (let value of array) {
+            console.log(value);
+        }
+    </code></pre>
+
+    <p>Loops are essential for iterating over arrays, objects, and performing repetitive tasks in JavaScript.</p>
+
+   
+    <footer>
+        &copy; 2024 Your Name | BVC Engineering College
+    </footer>
+</div>
+
+</body>
+</html>

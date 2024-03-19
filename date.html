@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - BVC Engineering College</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+         
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+           
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Date and Time in JavaScript</h1>
+
+    <h2>Introduction</h2>
+    <p>In JavaScript, working with dates and times is essential for various tasks such as displaying current date and time, manipulating dates, and performing date arithmetic. JavaScript provides the <code>Date</code> object to work with dates and times.</p>
+
+    <h2>Creating a Date Object</h2>
+    <p>You can create a new instance of the <code>Date</code> object using the <code>new Date()</code> constructor. If no arguments are provided, it creates a <code>Date</code> object representing the current date and time.</p>
+
+    <pre><code>
+        // Creating a Date object representing current date and time
+        let currentDate = new Date();
+        console.log(currentDate);
+    </code></pre>
+
+    <h2>Working with Dates</h2>
+    <p>The <code>Date</code> object provides various methods to work with dates, such as getting and setting the year, month, day, hour, minute, second, and milliseconds.</p>
+
+    <pre><code>
+        // Getting various components of the current date and time
+        let year = currentDate.getFullYear();
+        let month = currentDate.getMonth(); // Months are zero-based (0-January, 11-December)
+        let day = currentDate.getDate();
+        let hours = currentDate.getHours();
+        let minutes = currentDate.getMinutes();
+        let seconds = currentDate.getSeconds();
+        let milliseconds = currentDate.getMilliseconds();
+    </code></pre>
+
+    <h2>Formatting Dates</h2>
+    <p>You can format dates using the <code>toLocaleString()</code> method or by manually constructing a string using the various methods provided by the <code>Date</code> object.</p>
+
+    <pre><code>
+        // Formatting current date and time
+        let formattedDate = currentDate.toLocaleString();
+        console.log(formattedDate);
+    </code></pre>
+
+    <h2>Date Arithmetic</h2>
+    <p>JavaScript allows you to perform arithmetic operations on dates, such as adding or subtracting days, months, or years.</p>
+
+    <pre><code>
+        // Adding 1 day to the current date
+        currentDate.setDate(currentDate.getDate() + 1);
+        console.log(currentDate);
+    </code></pre>
+
+    <h2>Conclusion</h2>
+    <p>Understanding how to work with dates and times in JavaScript is crucial for developing applications that involve scheduling, time-sensitive tasks, and displaying dynamic date information to users.</p>
+
+    <footer>
+        &copy; 2024 Your Name | BVC Engineering College
+    </footer>
+</div>
+
+</body>
+</html>

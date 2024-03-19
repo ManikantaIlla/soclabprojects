@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f5f5f5; /* Light gray background */
+    color: #333; /* Dark gray text */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #222; /* Dark gray header */
+    color: #fff; /* White text for header */
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #ddd; /* Light gray hover effect */
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+    border: 1px solid #ddd; /* Light gray border for sections */
+    border-radius: 5px; /* Rounded corners for sections */
+}
+
+.hidden {
+    display: none; /* Initially hide all sections except Home */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1
