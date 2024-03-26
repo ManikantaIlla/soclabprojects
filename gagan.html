@@ -1,72 +1,105 @@
- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-   <style>
-body {
-                background-color: #FFF9C4; /* Light yellow background */
-                font-family: Arial, sans-serif;
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn JavaScript - Lab Activities</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fffefc; /* Light yellow background */
+    }
 
-            nav ul {
-                list-style: none;
-                margin: 0;
-                padding: 0;
-            }
+    nav {
+      background-color: #ffa500 ; /* Light orange background */
+      overflow: hidden;
+      padding: 10px 0;
+    }
 
-            nav li {
-                margin-bottom: 10px;
-            }
+    nav a {
+      display: block;
+      color: #fff; /* Darker text color */
+      text-align:left;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .section1{
+             padding:8px;
+	}
+    nav a:hover {
+      background-color:#f7e1b5; /* Orange background on hover */
+      color: #333; /* White text color on hover */
+    }
 
-            nav li a {
-                display: block;
-                text-decoration: none;
-                padding: 10px;
-                background-color: #FFA500; /* Orange button color */
-                color: #333;
-                text-align: center;
-                border-radius: 10px; /* Smooth borders */
-                transition: background-color 0.3s ease-in-out; /* Hover effect */
-                margin: 10px 0; /* Adds a margin above and below the buttons */
-            }
+    /* New styles for the div section */
+    div {
+      background-color: #fffefc; /* Light yellow background */
+      border: 1px solid #ffa500; /* Orange border */
+      padding: 20px;
+      margin: 10px auto; /* Center the div horizontally */
+      border-radius: 5px; /* Rounded corners */
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    }
 
-            nav li a:hover {
-                background-color: #FFD700; /* Yellow button color on hover */
-            }
-        </style>
+    div h3 {
+      margin-bottom: 15px;
+      color: #ffa500; /* Light orange for heading */
+    }
+
+    div ol {
+      margin-left: 20px; /* Indent the list */
+      padding: 0;
+    }
+
+    div li {
+      margin-bottom: 5px; /* Spacing between list items */
+    }
+
+    div li a {
+      color: #333; /* Darker text color */
+      text-decoration: none; /* Remove underline */
+    }
+
+    div li a:hover {
+      color: #ffa500; /* Orange text on hover */
+    }
+
+    div li a u {
+      /* Style the underline for emphasized items */
+      text-decoration: underline;
+      color: #ffa500; /* Orange underline */
+    }
+  </style>
 </head>
 <body>
-<nav>
-<ul>
-<li><a href="home.html" target = "contentFrame">Home</a></li>
-<li><a href="aboutus.html" target = "contentFrame">About</a></li>
- <li><a href="login.html" target = "contentFrame">Login</a></li>
-<li><a href="register.html" target = "contentFrame">Register</a></li>
-</li>
-</ul>
-</nav>
 
-<p>Lab Activities<p>
- <div>
-     <ol style="list-style-type:"decimal">
-   
-       <li> <a href="internal.html" target = "contentFrame"> Internal <a/>
-      <li> <a href="external.html" target="contentFrame">External <a/></li>
-<li><a href="js.html"target="contentFrame"<u>3.Understanding javascript syntax</a></u></li>
-<li><a href="Doc.html"target="contentFrame"<u>4.Introduction to document and window object</a></u></li>
-<li><a href="var.html"target="contentFrame"<u>5.variables and operators</a></u></li>
-<li><a href="datatypes.html"target="contentFrame"<u>6.Datatypes and Num type conversion</a></u></li>
-<li><a href="Math.html"target="contentFrame"<u>7.Math and string manipulation</a></u></li>
-<li><a href="object.html"target="contentFrame"<u>8.objects and time</a></u></li>
-<li><a href="date.html"target="contentFrame"<u>9.Date and time</a></u></li>
-<li><a href="conditional.html"target="contentFrame"<u>10.Conditional statements</a></u></li>
-<li><a href="switch.html"target="contentFrame"<u>11.Switch case</a></u></li>
-<li><a href="looping.html"target="contentFrame"<u>12.Looping in js</a></u></li>
-<li><a href="functions.html"target="contentFrame"<u>13.Functions</a></u></li>
-     </ol>
-</div>
-</body>
-</html>
+  <nav>
+    <a href="home.html" target="contentFrame">Home</a>
+    <a href="aboutus.html" target="contentFrame">About Us</a>
+    <a href="login.html" target="contentFrame">Login Page</a>
+    <a href="register.html" target="contentFrame">Register</a>
+  </nav>
+
+    
+        <h1 style="padding:10px;">Learn JavaScript</h1>
+  	<p  style="padding:10px;">Lab Activities</p>
+ 
+  <div>
+    <h3>List of Labs</h3>
+    <ol style="list-style-type: decimal;">
+       <li><a href="internal.html" target="contentFrame">Internal</a></li>
+   <li><a href="external.html" target="contentFrame">External</a></li>
+   <li><a href="js.html" target="contentFrame">Understanding javascript syntax</a></li>
+   <li><a href="Doc.html" target="contentFrame">Introduction to document and window object</a></li>
+   <li><a href="var.html" target="contentFrame">variables and operators</a></li>
+   <li><a href="datatypes.html" target="contentFrame">Datatypes and Num type conversion</li>
+   <li><a href="Math.html" target="contentFrame">Math and string manipulation</a></li>
+   <li><a href="object.html" target="contentFrame">objects and time</a></li>
+   <li><a href="date.html" target="contentFrame">Date and time</a></li>
+   <li><a href="conditional.html" target="contentFrame">Conditional statements</a></li>
+   <li><a href="switch.html" target="contentFrame">Switch case</a></li>
+   <li><a href="looping.html" target="contentFrame">Looping in js</a></li>
+   <li><a href="functions.html" target="contentFrame">Functions</a></li>
