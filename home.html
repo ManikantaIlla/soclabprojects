@@ -30,11 +30,16 @@ body {
 .profile-pic {
   width: 100%;
   border-radius: 50%;
-  box-shadow: 0 0 5px rgba(255, 165, 0, 0.3); /* Orange profile pic shadow */
+  transition: transform 0.3s ease; /* Smooth transition for hover */
   /* Add your profile picture here (replace with URL) */
   background-image: url("path/to/your/profile_pic.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1); /* Enlarge on hover */
+  box-shadow: 0 0 5px rgba(255, 165, 0, 0.5); /* Increase shadow on hover */
 }
 
 .details {
@@ -94,9 +99,5 @@ p {
       <span class="skill">CSS</span>
       <span class="skill">JavaScript</span>
       <span class="skill">SQL</span>
-      <span class="skill">Data Structures</span>
-      <span class="skill">Algorithms</span>
-    </div>
-  </div>
-</div>
-</body>
+      <span class="skill">DSA</span>
+      
