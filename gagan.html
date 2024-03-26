@@ -4,43 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black & White Menu</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fff; /* White background */
-        }
+    
+   <style>
+body {
+                background-color: #FFF9C4; /* Light yellow background */
+                font-family: Arial, sans-serif;
+            }
 
-        nav {
-            background-color: #000; /* Black background */
-            overflow: hidden;
-        }
+            nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
 
-        nav a {
-            display: block;
-            color: #fff; /* White text color */
-            text-align: left;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 16px;
-        }
+            nav li {
+                margin-bottom: 10px;
+            }
 
-        nav a:hover {
-            background-color: #fff; /* White background on hover */
-            color: #000; /* Black text color on hover */
-        }
-    </style>
+            nav li a {
+                display: block;
+                text-decoration: none;
+                padding: 10px;
+                background-color: #FFA500; /* Orange button color */
+                color: #333;
+                text-align: center;
+                border-radius: 10px; /* Smooth borders */
+                transition: background-color 0.3s ease-in-out; /* Hover effect */
+                margin: 10px 0; /* Adds a margin above and below the buttons */
+            }
+
+            nav li a:hover {
+                background-color: #FFD700; /* Yellow button color on hover */
+            }
+        </style>
 </head>
 <body>
-    
 <nav>
-     
-    <a href="home.html" target="contentFrame">Home</a>
-    <a href="aboutus.html" target="contentFrame">About Us</a>
-    <a href="login.html" target="contentFrame">Login Page</a>
-    <a href="register.html" target="contentFrame">Register</a>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+ <li><a href="#">Login</a></li>
+<li><a href="#">Register</a></li>
+</li>
+</ul>
 </nav>
 
 <p>Lab Activities<p>
