@@ -3,57 +3,100 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mankianta Illa's Homepage</title>
+<title>Mankianta Illa | Data Science Enthusiast</title>
 <style>
 body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5d997;
-            color: #8b4513;
-        }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffe7d3; /* Light yellow background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            border: 2px solid #ffa500;
-            border-radius: 20px;
-            background-color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+.container {
+  max-width: 800px;
+  margin: 40px auto; /* Add some top and bottom margin */
+  padding: 20px;
+  background-color: #fff; /* White container */
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.2); /* Subtle orange shadow */
+  display: grid;
+  grid-template-columns: 1fr 1.5fr; /* Divide into two columns */
+  grid-gap: 20px; /* Gap between columns */
+}
 
-        h1 {
-            color: #ffa500;
-            text-align: center;
-        }
+.profile-pic {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(255, 165, 0, 0.3); /* Orange profile pic shadow */
+  /* Add your profile picture here (replace with URL) */
+  background-image: url("path/to/your/profile_pic.jpg");
+  background-size: cover;
+  background-position: center;
+}
 
-        .details {
-            margin-top: 20px;
-            text-align: center;
-        }
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Align content vertically */
+}
 
-        .about {
-            margin-top: 30px;
-            text-align: center;
-        }
-    </style>
+h1 {
+  color: #ffa500; /* Orange heading */
+  font-size: 1.8em; /* Adjust heading size */
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #ffa500; /* Orange subheading */
+  margin-bottom: 5px;
+}
+
+p {
+  margin: 5px 0; /* Adjust paragraph margin */
+  line-height: 1.5; /* Increase line spacing for readability */
+}
+
+.about {
+  color: #333; /* Dark readable text */
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap; /* Allow skills to wrap on multiple lines */
+  margin-top: 10px;
+}
+
+.skill {
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #ffa500; /* Orange skill badge */
+  color: #fff; /* White text for skill badge */
+  font-size: 0.8em; /* Smaller font for skills */
+}
+</style>
 </head>
 <body>
 <div class="container">
-<h1>Welcome to Mankianta Illa's Homepage</h1>
-<div class="details">
-<p>Name: Mankianta Illa</p>
-<p>Roll No: 226M1A0527</p>
-<p>Course: CSE</p>
-<p>Year: 2nd</p>
-</div>
-<div class="about">
-<h3>About Me</h3>
-<p>I am a tech enthusiast, passionate about programming and problem-solving. I have completed certifications in Python, HTML, CSS, JavaScript, and SQL. Currently, I am learning Data Structures and Algorithms, aiming to become a Data Science Engineer. My motivation and curiosity drive me to explore and learn new technologies.</p>
-</div>
+  <div class="profile-pic"></div>  <div class="details">
+    <h1>Mankianta Illa</h1>
+    <h3>Data Science Enthusiast</h3>
+    <div class="about">
+      <p>I am a tech enthusiast, passionate about programming and problem-solving. I have completed certifications in Python, HTML, CSS, JavaScript, and SQL. Currently, I am learning Data Structures and Algorithms, aiming to become a Data Science Engineer. My motivation and curiosity drive me to explore and learn new technologies.</p>
+    </div>
+    <div class="skills">
+      <span class="skill">Python</span>
+      <span class="skill">HTML</span>
+      <span class="skill">CSS</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">SQL</span>
+      <span class="skill">Data Structures</span>
+      <span class="skill">Algorithms</span>
+    </div>
+  </div>
 </div>
 </body>
-</html>
