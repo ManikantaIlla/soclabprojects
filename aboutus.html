@@ -74,7 +74,11 @@ p {
   flex-wrap: wrap; /* Allow skills to wrap on multiple lines */
   margin-top: 10px;
 }
-
+.image {
+  width: 100%;
+  border-radius: 50%;
+  -ms-flex-align: center;
+}
 .skill {
   margin: 5px;
   padding: 5px 10px;
@@ -87,7 +91,10 @@ p {
 </head>
 <body>
 <div class="container">
-  <div class="profile-pic"></div>  <div class="details">
+  <div class="profile-pic">
+    <img class="image" src ="profile.jpg"/>
+  </div> 
+   <div class="details">
     <h1>Mankianta Illa</h1>
     <h3>Data Science Enthusiast</h3>
     <div class="about">
